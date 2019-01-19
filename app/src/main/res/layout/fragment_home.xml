@@ -1,0 +1,430 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cryptenet.thanatos.smart_tour_guide.fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_home_instruction1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/tv_home_instruction1"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_home_instruction2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/tv_home_instruction2"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_start_point_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/home_f_standard_margin_horizontal"
+            android:layout_marginTop="@dimen/home_f_standard_margin_vertical"
+            android:text="@string/tv_start_point_hint"
+            android:textColor="@color/white"/>
+
+        <Spinner
+            android:id="@+id/spin_start_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_f_standard_margin_horizontal"
+            android:layout_marginRight="@dimen/home_f_standard_margin_horizontal"
+            android:background="@drawable/bg_spinner"/>
+
+        <TextView
+            android:id="@+id/tv_interest_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/home_f_standard_margin_horizontal"
+            android:layout_marginTop="@dimen/home_f_standard_margin_vertical"
+            android:text="@string/tv_interest_hint"
+            android:textColor="@color/white"/>
+
+        <Spinner
+            android:id="@+id/spin_interest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_f_standard_margin_horizontal"
+            android:layout_marginRight="@dimen/home_f_standard_margin_horizontal"
+            android:background="@drawable/bg_spinner"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_budget_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/home_f_standard_margin_horizontal"
+                android:layout_marginTop="@dimen/home_f_standard_margin_vertical"
+                android:layout_alignParentStart="true"
+                android:text="@string/tv_budget_hint"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_budget_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/home_f_standard_margin_horizontal"
+                android:layout_marginTop="@dimen/home_f_standard_margin_vertical"
+                android:layout_alignParentEnd="true"
+                android:text="0"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id="@+id/seek_budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_f_standard_margin_horizontal"
+            android:layout_marginRight="@dimen/home_f_standard_margin_horizontal"
+            android:layout_marginTop="@dimen/home_f_standard_margin_vertical"
+            app:dsb_min="500"
+            app:dsb_max="10000"
+            app:dsb_indicatorColor="@color/colorAccent"
+            app:dsb_progressColor="@color/colorAccent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_duration_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/home_f_standard_margin_horizontal"
+                android:layout_marginTop="@dimen/home_f_standard_margin_vertical"
+                android:layout_alignParentStart="true"
+                android:text="@string/tv_duration_hint"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/tv_duration_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/home_f_standard_margin_horizontal"
+                android:layout_marginTop="@dimen/home_f_standard_margin_vertical"
+                android:layout_alignParentEnd="true"
+                android:text="0"
+                android:textAlignment="gravity"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id="@+id/seek_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_f_standard_margin_horizontal"
+            android:layout_marginRight="@dimen/home_f_standard_margin_horizontal"
+            android:layout_marginTop="@dimen/home_f_standard_margin_vertical"
+            app:dsb_min="1"
+            app:dsb_max="10"
+            app:dsb_indicatorColor="@color/colorAccent"
+            app:dsb_progressColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/tv_season_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/home_f_standard_margin_horizontal"
+            android:layout_marginTop="@dimen/home_f_standard_margin_vertical"
+            android:text="@string/tv_season_hint"
+            android:textColor="@color/white"/>
+
+        <RadioGroup
+            android:id="@+id/rg_season"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_f_standard_margin_horizontal"
+            android:layout_marginRight="@dimen/home_f_standard_margin_horizontal"
+            android:layout_marginTop="@dimen/home_f_standard_margin_vertical_min"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RadioButton
+                android:id="@+id/btn_season_summer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/radio_margin"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="@dimen/radio_padding"
+                android:paddingTop="@dimen/radio_padding"
+                android:text="@string/btn_season_summer"
+                android:textAlignment="center"
+                android:textColor="@drawable/selector_radio" />
+
+            <RadioButton
+                android:id="@+id/btn_season_rainy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/radio_margin"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="@dimen/radio_padding"
+                android:paddingTop="@dimen/radio_padding"
+                android:text="@string/btn_season_rainy"
+                android:textAlignment="center"
+                android:textColor="@drawable/selector_radio" />
+
+            <RadioButton
+                android:id="@+id/btn_season_winter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/radio_margin"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="@dimen/radio_padding"
+                android:paddingTop="@dimen/radio_padding"
+                android:text="@string/btn_season_winter"
+                android:textAlignment="center"
+                android:textColor="@drawable/selector_radio" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_more_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_f_standard_margin_horizontal"
+            android:layout_marginRight="@dimen/home_f_standard_margin_horizontal"
+            android:layout_marginTop="@dimen/home_f_standard_margin_vertical"
+            android:background="@drawable/bg_button"
+            android:text="@string/btn_show_more_options"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:id="@+id/lay_lin_more_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_f_standard_margin_horizontal"
+            android:layout_marginRight="@dimen/home_f_standard_margin_horizontal"
+            android:layout_marginTop="@dimen/home_f_standard_margin_vertical"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_expenditure_type_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_expenditure_type_hint"/>
+
+            <RadioGroup
+                android:id="@+id/rg_expenditure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <RadioButton
+                    android:id="@+id/btn_expenditure_luxury"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/radio_margin"
+                    android:paddingTop="@dimen/radio_padding"
+                    android:paddingBottom="@dimen/radio_padding"
+                    android:background="@drawable/bg_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/btn_expenditure_luxury"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_radio"/>
+
+                <RadioButton
+                    android:id="@+id/btn_expenditure_smart"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/radio_margin"
+                    android:paddingTop="@dimen/radio_padding"
+                    android:paddingBottom="@dimen/radio_padding"
+                    android:background="@drawable/bg_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/btn_expenditure_smart"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_radio"/>
+
+                <RadioButton
+                    android:id="@+id/btn_expenditure_saver"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/radio_margin"
+                    android:paddingTop="@dimen/radio_padding"
+                    android:paddingBottom="@dimen/radio_padding"
+                    android:background="@drawable/bg_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/btn_expenditure_saver"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_radio"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_speed_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/home_f_standard_margin_vertical"
+                android:text="@string/tv_speed_hint"/>
+
+            <RadioGroup
+                android:id="@+id/rg_speed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <RadioButton
+                    android:id="@+id/btn_speed_rush"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/radio_margin"
+                    android:paddingTop="@dimen/radio_padding"
+                    android:paddingBottom="@dimen/radio_padding"
+                    android:background="@drawable/bg_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/btn_speed_rush"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_radio"/>
+
+                <RadioButton
+                    android:id="@+id/btn_speed_moderate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/radio_margin"
+                    android:paddingTop="@dimen/radio_padding"
+                    android:paddingBottom="@dimen/radio_padding"
+                    android:background="@drawable/bg_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/btn_speed_moderate"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_radio"/>
+
+                <RadioButton
+                    android:id="@+id/btn_speed_relaxing"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/radio_margin"
+                    android:paddingTop="@dimen/radio_padding"
+                    android:paddingBottom="@dimen/radio_padding"
+                    android:background="@drawable/bg_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/btn_speed_relaxing"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_radio"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_transportation_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/home_f_standard_margin_vertical"
+                android:text="@string/tv_transportation_hint"/>
+
+            <RadioGroup
+                android:id="@+id/rg_transportation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+                <RadioButton
+                    android:id="@+id/btn_transportation_air"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/radio_margin"
+                    android:paddingTop="@dimen/radio_padding"
+                    android:paddingBottom="@dimen/radio_padding"
+                    android:background="@drawable/bg_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/btn_transportation_air"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_radio"/>
+
+                <RadioButton
+                    android:id="@+id/btn_transportation_bus_luxury"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/radio_margin"
+                    android:paddingTop="@dimen/radio_padding"
+                    android:paddingBottom="@dimen/radio_padding"
+                    android:background="@drawable/bg_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/btn_transportation_bus_luxury"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_radio"/>
+
+                <RadioButton
+                    android:id="@+id/btn_transportation_bus_cheap"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/radio_margin"
+                    android:paddingTop="@dimen/radio_padding"
+                    android:paddingBottom="@dimen/radio_padding"
+                    android:background="@drawable/bg_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/btn_transportation_bus_cheap"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_radio"/>
+
+                <RadioButton
+                    android:id="@+id/btn_transportation_none"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/radio_margin"
+                    android:paddingTop="@dimen/radio_padding"
+                    android:paddingBottom="@dimen/radio_padding"
+                    android:background="@drawable/bg_button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/btn_transportation_none"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_radio"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_f_standard_margin_horizontal"
+            android:layout_marginRight="@dimen/home_f_standard_margin_horizontal"
+            android:layout_marginTop="@dimen/home_f_standard_margin_vertical"
+            android:background="@color/colorAccent"
+            android:text="@string/btn_search_tour_plan"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</ScrollView>

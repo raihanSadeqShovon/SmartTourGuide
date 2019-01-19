@@ -1,0 +1,11 @@
+<resources>
+    <string-array name="start_point_list">
+        <item>Dhaka</item>
+    </string-array>
+
+    <string-array name="interest_list">
+        <item>Waterfalls</item>
+        <item>Hills</item>
+        <item>Sea Side</item>
+    </string-array>
+</resources>

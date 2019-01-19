@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Smart Tour Guide</string>
+
+    <!-- Activity Titles -->
+    <string name="title_activity_fullscreen">SplashActivity</string>
+
+    <!-- Navigation Setup -->
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+    <!-- Navigation Menu Items -->
+    <string name="nav_home">Home</string>
+    <string name="nav_weather">Weather</string>
+
+    <!-- Appbar Menu Items -->
+    <string name="action_about">About</string>
+
+    <!-- Fragment Texts -->
+    <!-- Home Fragment -->
+    <string name="tv_home_instruction1">Choose your criteria and interests.</string>
+    <string name="tv_home_instruction2">Get a convenient tour plan!</string>
+    <string name="tv_start_point_hint">Start Point</string>
+    <string name="tv_interest_hint">Interest</string>
+    <string name="tv_budget_hint">Budget</string>
+    <string name="tv_duration_hint">Duration</string>
+    <string name="tv_season_hint">Season</string>
+    <string name="tv_expenditure_type_hint">Expenditure Type</string>
+    <string name="tv_speed_hint">Tour Speed</string>
+    <string name="tv_transportation_hint">Transportation Type</string>
+
+    <string name="btn_season_summer">Summer</string>
+    <string name="btn_season_rainy">Rainy</string>
+    <string name="btn_season_winter">Winter</string>
+
+    <string name="btn_expenditure_luxury">Luxury</string>
+    <string name="btn_expenditure_smart">Smart</string>
+    <string name="btn_expenditure_saver">Saver</string>
+
+    <string name="btn_speed_rush">Rush</string>
+    <string name="btn_speed_moderate">Moderate</string>
+    <string name="btn_speed_relaxing">Relaxing</string>
+
+    <string name="btn_transportation_air">Air</string>
+    <string name="btn_transportation_bus_luxury">Bus A/C</string>
+    <string name="btn_transportation_bus_cheap">Bus non-A/C</string>
+    <string name="btn_transportation_none">None</string>
+
+    <string name="btn_show_more_options">Show More Options</string>
+    <string name="btn_hide__more_options">Hide More Options</string>
+    <string name="btn_search_tour_plan">Search Tour Plan</string>
+
+    <!-- Result Fragment -->
+    <string name="tv_tour_plan_suggestions">Tour Plan Suggestions</string>
+
+    <!-- Search Bundle -->
+    <string name="bundle_start_point">start Point</string>
+    <string name="bundle_interest">interest</string>
+    <string name="bundle_budget">budget</string>
+    <string name="bundle_duration">duration</string>
+    <string name="bundle_season">season</string>
+    <string name="bundle_expenditure_type">expenditure</string>
+    <string name="bundle_speed">speed</string>
+    <string name="bundle_transportation">transportation</string>
+
+    <!-- Developer Info -->
+    <string name="app_developer_company">Raihan Sadeq</string>
+    <string name="app_developer_name">Raihan Sadeq</string>
+    <string name="app_developer_email">raihanshovon@yahoo.com</string>
+</resources>

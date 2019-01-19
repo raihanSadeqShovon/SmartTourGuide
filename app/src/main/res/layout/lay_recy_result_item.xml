@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/home_f_standard_margin_vertical_min"
+    android:layout_marginLeft="@dimen/home_f_standard_margin_horizontal_min"
+    android:layout_marginRight="@dimen/home_f_standard_margin_horizontal_min"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_tour_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_expenditure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_coin"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tv_tour_path"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_clock"
+            app:layout_constraintTop_toBottomOf="@id/tv_tour_path"
+            app:layout_constraintLeft_toRightOf="@id/tv_expenditure"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
